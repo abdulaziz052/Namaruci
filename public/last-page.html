@@ -1,15 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last page</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
+    <header class="border-b-2 pt-[24px] pb-[24px]">
+        <div class="max-w-[1200px] mx-auto px-5">
+            <div class="flex justify-between">
+                <a href="">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <ul class="flex items-center gap-[32px]">
+                    <li><a href="">Об авторе</a></li>
+                    <li><a href="">Книги</a></li>
+                    <li><a href="">Комплекты</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a class="py-[8px] px-[19px] bg-[#F8F8F8] rounded-[3px]" href="">О доставке</a></li>
+                    <button>
+                        <img src="./img/basket.svg" alt="">
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Hero start -->
+    <section>
+        <div class="max-w-[1200px] mx-auto px-5">
+            <div class="pt-[36px]">
+                <img src="./img/arrow-right.svg" alt="">
+            </div>
+            <div class="flex flex-col  max-w-[680px] mx-auto pt-[18px]">
+                <h1 class="mb-[20px] font-semibold text-[36px] leading-[42px] text-[#333333] max-w-[492px]">Флаги,
+                    знамена, полезная информация, часть I</h1>
+                <p class="mb-[38px] font-semibold text-[14px] leading-[18px] text-[#333333] max-w-[575px]">Псилоцибин
+                    обещает радикально изменить наши враджебные рабочие места
+                    и плохи наши враджебные наши враджебные</p>
+                <div class="flex items-center gap-[16px] mb-[37px]">
+                    <img width="41px" src="./img/avatar.png" alt="">
+                    <div>
+                        <div class="flex gap-[16px]">
+                            <h4 class="font-normal text-[16px] leading-[35px] text-[#3B3B3B]">Андрей Рублёв</h4>
+                            <span class="font-normal text-[16px] leading-[35px] text-[#828282]">Подписаться</span>
+                        </div>
+                        <div class="flex gap-[12px]">
+                            <p>8 минут чтения</p>
+                            <p>8 авгута</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-[30px] flex items-center justify-between border-b-2 pb-[14px]">
+                    <div class="flex items-center gap-[8px]">
+                        <img src="./img/clap.svg" alt="">
+                        <p class="font-normal text-[12px] leading-[24px] text-[#828282]">2321</p>
+                        <img src="./img/comment.svg" alt="">
+                    </div>
+                    <div class="flex items-center gap-[5px]">
+                        <img src="./img/saved-message.svg" alt="">
+                        <img src="./img/player.svg" alt="">
+                        <img src="./img/share.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <p class="font-normal text-[14px] leading-[22px] text-[#333333] max-w-[680px] mb-[18px]">Добро
+                        пожаловать обратно в ежеквартальный стабильный выпуск Flutter, на этот раз для Flutter 3.16. В
+                        этом выпуске комплектов материал 3 как новая тема по умолчанию, приносит превью
+                        <mark>крыльчатки</mark> на Android, позволяет добавлять расширения для инструментов
+                        разработчика, и многое другое! Это также совпадает с <a>значительными обновлениями
+                            инструментария Flutter Casual Games</a>!
+                        Всего за три месяца с момента нашего последнего релиза 145 участников сообщества объединили 928
+                        запросов на извлечение, при этом 40 участников сообщества создали свой первый коммит для
+                        Flutter!
+                        Продолжайте читать, чтобы узнать обо всех новых дополнениях и улучшениях, внесенных сообществом
+                        Flutter в этот последний релиз!
+                    </p>
+                    <h2 class="mb-[24px] font-semibold text-[24px] leading-[22px] text-[#333333]">Фреймворк</h2>
+                    <span class="mb-[10px] font-semibold text-[18px] leading-[22px] text-[#333333]">Материал 3 - это
+                        новый
+                        материал по умолчанию</span>
+                    <p class="font-normal text-[14px] leading-[22px] text-[#333333]">Начиная с версии 3.10 (май 2023)
+                        библиотека материалов была обновлена в соответствии с последней
+                        спецификацией Material Design. Изменения включают новые компоненты и темы компонентов, а также
+                        обновленные визуальные эффекты компонентов. До выпуска версии 3.16 изменения были “одобрены” с
+                        помощью флага темы. Начиная с этого выпуска, по умолчанию значение true.
+                        (<a>#130764</a>)useMaterial3useMaterial3
+                        Вы все еще можете отказаться от версии библиотеки материалов M3, указав это useMaterial3: false
+                        в вашей MaterialApp теме, но материал 2 в конечном итоге устареет и будет удален. Кроме того,
+                        некоторые виджеты нельзя было просто обновить, им требовалась совершенно новая реализация. По
+                        этой причине ваш пользовательский интерфейс может выглядеть немного странно, когда вы видите,
+                        что он работает как Material 3. Чтобы исправить это, вручную перейдите на новые виджеты, такие
+                        как панель навигации. Для получения более подробной информации ознакомьтесь с выпуском материала
+                        3 umbrella на GitHub.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero end -->
+
+
+    <!-- Footer start -->
+    <section class="pt-[354px] bg-cover bg-no-repeat" style="background-image: url(./img/footer-banner.jpg);">
+        <div class="max-w-[1200px] mx-auto px-5">
+            <div>
+                <div class="flex gap-[119px]">
+                    <div>
+                        <img class="mb-[38px]" src="./img/footer-logo.svg" alt="">
+                        <ul>
+                            <li>
+                                <a class="flex items-center gap-[8px] mb-[16px]" href="#">
+                                    <img src="./img/telegram-icon.svg" alt="">Новости
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-[8px] mb-[16px]" href="#">
+                                    <img src="./img/telegram-icon2.svg" alt=""> Чат с менеджером
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-[8px] mb-[16px]" href="#">
+                                    <img src="./img/wk-icon.svg" alt=""> Группа ВК
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-[8px] mb-[16px]" href="#">
+                                    <img src="./img/player-icon.svg" alt=""> Ютуб канал
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-[20px] leading-[24px] text-[#3B3B3B] mb-[55px]">Интересное</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Кто мы</a>
+                            </li>
+                            <li>
+                                <a href="#">Наш блог</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Наша команда</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-[20px] leading-[24px] text-[#3B3B3B]">Меню</h4>
+                        <p>Об авторе</p>
+                        <h3>Книги</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Комплекты</a>
+                            </li>
+                            <li>
+                                <a href="#">Блог</a>
+                            </li>
+                            <li>
+                                <a href="#">Медиа</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="ml-auto p-[26px] bg-[#757575CC] opacity-[80%] flex items-center max-w-[76px] h-[76px] rounded-[50%]">
+                        <img src="./img/footer-arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex gap-[43px] pt-[96px]">
+                    <button style="background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+                    " class="rounded-[3px] w-[208px] py-[12px] px-[20px] text-white font-semibold text-[15px] leading-[24px]">Перейти в магазин</button>
+                    <button class="rounded-[3px] w-[208px] py-[12px] px-[20px] bg-[#F8F8F8] font-light text-[15px] leading-[24px] text-[#3B3B3B]">О доставке</button>
+                </div>
+                <div class="flex gap-[62px] pt-[108px]">
+                    <p class="font-normal text-[15px] leading-[24px] text-[#3B3B3B]">Разработчик сайта:<a href="#">Global Code</a></>
+                    <p class="font-normal text-[15px] leading-[24px] text-[#3B3B3B]">108books © 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer end -->
 
 
 
-    
+
 </body>
+
 </html>
